@@ -1,0 +1,177 @@
+/* Animación para el logo de CAMS */
+.logo {
+  /* animation: slideInLeft; */
+  animation: backInLeft;
+  animation-duration: 2s;
+}
+
+/*----------------------------------------------------------------------------------
+------------------------------ SECTION INFO ----------------------------------------
+------------------------------------------------------------------------------------*/
+.info-img {
+  height: 80%;
+  width: 100%;
+}
+
+.info-details {
+  visibility: visible;
+  display: flex;
+  column-count: 1;
+  height: 100px;
+  background-color: #262626;
+  transition: all 0.7s ease 0s;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  -ms-transition: all 0.7s ease 0s;
+}
+
+.info-details:hover {
+  background: transparent;
+}
+
+.info-details:hover p {
+  color: rgb(0, 0, 0);
+}
+
+.info-details .triang {
+  width: 0;
+  height: 0;
+  border-left: 50px solid #ffffff;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  text-align: center;
+  position: relative;
+  transition: all 0.7s ease 0s;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  -ms-transition: all 0.7s ease 0s;
+}
+
+.info-details:hover .triang {
+  border-left: 50px solid #2a2a2a;
+}
+
+.info-details img {
+  height: 100px;
+  margin-top: 10px;
+}
+
+.slide .column {
+  width: 450px;
+  height: 550px;
+  margin-right: 10px;
+  position: relative;
+}
+
+/******************************/
+/*********** SLIDER ***********/
+/******************************/
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+
+  20% {
+    left: 0%;
+  }
+
+  25% {
+    left: -33.33333333333333%;
+  }
+
+  45% {
+    left: -33.33333333333333%;
+  }
+
+  50% {
+    left: -66.66666666666666%;
+  }
+
+  70% {
+    left: -66.66666666666666%;
+  }
+
+  75% {
+    left: -99.99999999999999%;
+  }
+
+  95% {
+    left: -100%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+div#slider {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+div#slider .slide {
+  width: 20%;
+  float: left;
+  display: flex;
+  position: relative;
+  min-height: 1px;
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media div h3{
+    margin-bottom: 30px;
+}
+
+.social-media div h3 a {
+  padding: 10px;
+  color: #262626;
+  text-indent: 15px;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "BenchNine", sans-serif;
+  letter-spacing: 2px;
+  border-radius: 4px;
+
+  background-image: linear-gradient(#47b386, #47b386);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 500ms;
+}
+
+.social-media div h3 a:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+  color: #ffffff;
+}
+
+.social-media .pages {
+  display: flex;
+  align-items: center;
+}
+
+.social-media .fb-page {
+  width: 40%;
+  align-items: center;
+}
+
+.social-media .snap-widget {
+  width: 60%;
+  align-items: center;
+}

@@ -1,0 +1,59 @@
+.service {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-img {
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.luna {
+    width: 150px;
+    height: 150px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: 2px 5px 5px #262626;
+    -webkit-box-shadow: 2px 5px 5px #262626;
+    box-shadow: 3px 3px 10px #262626;
+}
+
+.col-img img {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    height: 60%;
+    border: none;
+}
+
+.col-text{
+    width: 80%;
+}
+
+.title-service h3 {
+    color: #262626;
+    font-family: 'Chakra Petch', cursive;
+}
+
+.content-service {
+    align-items: left;
+}
+
+.content-service h4{
+    text-indent: 10px;
+    font-weight: bold;
+    background: #d1d1d1;
+    padding: 5px 0px;
+    /* font-size: 20px; */
+}
+
+.content-service p {
+    text-indent: 10px;
+}

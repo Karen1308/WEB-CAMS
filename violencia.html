@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="">
+
+	<meta name="author" content="">
+
+	<title> CAMS IAMPP - VBGG</title>
+
+
+
+	<!--------------------------------------------------------------------------------------->
+	<!------------------------------------ CSS Libraries ------------------------------------>
+	<!--------------------------------------------------------------------------------------->
+
+	<!-- Estilos para la página -->
+
+	<!-- Estilos para la página -->
+	<link rel="stylesheet" href="css/violence.css">
+
+	<!-- Animaciones para elementos  -->
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!-- Media queries - Responsive  -->
+	<link rel="stylesheet" href="css/mediaqueries.css">
+
+	<!-- Estilos para el swiper -->
+	<link rel="stylesheet" href="css/swiper.css">
+
+	<link rel="stylesheet" href="css/generic.css">
+
+	<style>
+		#contenedor_principal {
+			width: 1524px;
+			height: auto;
+			position: relative;
+			margin: auto;
+		}
+
+		.contenedor_imagen_texto {
+			width: 345px;
+			height: auto;
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			overflow: hidden;
+		}
+
+		.imagen,
+		.texto {
+			width: 100%;
+			height: auto;
+			position: relative;
+			display: inline;
+		}
+
+		.texto {
+			height: auto;
+			text-align: center
+		}
+	</style>
+
+</head>
+
+<body>
+	<!------------------------>
+	<!---- HEADER SECTION ---->
+	<!------------------------>
+	<header>
+		<div class="top-header">
+			<div class="logo">
+				<img src="img/cams_fepremi.png" alt="">
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<!--Primera Imagen-->
+		<div class="contenedor_imagen_texto">
+			<div class="imagen"><img src="img/mercedes.jpg"></div>
+		</div>
+
+		<!--Segunda Imagen-->
+		<div class="contenedor_imagen_texto">
+			<div class="imagen"><img src="img/dolores.jpg"></div>
+		</div>
+
+		<!--tercera Imagen-->
+		<div class="contenedor_imagen_texto">
+			<div class="imagen"><img src="img/cardona.jpg"></div>
+		</div>
+
+		<section>
+			<div class="title_h2">
+				<h2> Autopesquisa de Violencia basada en Género y Generaciones </h2>
+			</div>
+			<div class="container">
+				<form action="" id="violence" method="POST">
+					<div class="row">
+						<div class="question">
+							<p> 1 - ¿En la actualidad, se ha sentido dañado/a emocional o psicológicamente por parte de
+								su pareja o alguna persona importante para usted?</p>
+							<p> Ejemplos: insultos constantes, humillaciones en privado o en público, destrucción de
+								objetos
+								apreciados, ridiculizar, rechazar, manipular, amenazar, aislar de amigos o miembros de
+								la
+								familia.</p>
+						</div>
+						<div class="answer">
+							<input type="radio" id="1_si" name="answer1" value="si">
+							<label for="1_si">SI</label>
+							<input type="radio" id="1_no" name="answer1" checked>
+							<label for="1_no">NO</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="question">
+							<p> 2 - ¿En la actualidad, su pareja u otra persona cercana le ha amenazado con lastimarlo/a
+								o
+								hacerle daño físico?</p>
+						</div>
+						<div class="answer">
+							<input type="radio" id="2_si" name="answer2" value="si">
+							<label for="2_si">SI</label>
+							<input type="radio" id="2_no" name="answer2" checked>
+							<label for="2_no">NO</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="question">
+							<p> 3 - ¿Alguien cercano a usted lo/a ha tocado de forma inadecuada o le ha hecho algo que a
+								usted
+								no le gustó? ¿o le ha obligado a hacer algo con su cuerpo o el cuerpo del otro? </p>
+							<p>Ejemplo: Tocar, besos, mirar al bañarse, enviar mensajes inadecuados, mostrar partes
+								íntimas
+							</p>
+						</div>
+						<div class="answer">
+							<input type="radio" id="3_si" name="answer3" value="si">
+							<label for="3_si">SI</label>
+							<input type="radio" id="3_no" name="answer3" checked>
+							<label for="3_no">NO</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="question">
+							<p>4 - ¿Se siente seguro/a estando dentro de su casa? </p>
+						</div>
+						<div class="answer">
+							<input type="radio" id="4_si" name="answer4" value="si">
+							<label for="4_si">SI</label>
+							<input type="radio" id="4_no" name="answer4" checked>
+							<label for="4_no">NO</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="question">
+							<p> 5 - ¿Siente miedo de que su pareja u otra persona importante para usted, le cause algún
+								daño?</p>
+						</div>
+						<div class="answer">
+							<input type="radio" id="5_si" name="answer5" value="si">
+							<label for="5_si">SI</label>
+							<input type="radio" id="5_no" name="answer5" checked>
+							<label for="5_no">NO</label>
+						</div>
+					</div>
+
+					<br>
+					<br>
+					<button type="button" onclick="envioDatos();"> Confirmar </button>
+					<button type="reset"> Resetear valores </button>
+				</form>
+
+				<div class="messages">
+					<div id="message1">
+						<p> <b>Nuestra institución cuenta con un equipo de referencia de Violencia basada en Género y
+								Generaciones que podrá orientarte y responder a todas tus preguntas. Si lo deseas puedes
+								contactarte:</b>
+							<br> Horario de atención: <br>
+							<b> Cardona:</b> Lunes: Hora 13:00 a 15:00; Jueves: Hora 13:00 a 14:00hs. Telefono
+							45369045/7472 <br>
+							<b> Dolores:</b> Miércoles: Hora 14:00 a 16:00hs. Telefono 45342111<br>
+							<b> Mercedes:</b> Jueves: Hora 11:00 a 13:00hs. Contacto Telefonico 45320751/453 de lunes a
+							viernes
+							de 08:00 a 14:00hs
+						</p>
+						<div class="message_img">
+							<img src="/img/violence/mercedes.jpg" alt="">
+							<img src="/img/violence/dolores.jpg" alt="">
+							<img src="/img/violence/cardona.jpg" alt="">
+						</div>
+					</div>
+					<div id="message2">
+						<p> <b>Puedes obtener ayuda comunicándote al 0800 4141 o *4141 desde tu celular. Si lo deseas
+								también puedes contactarte con nuestro equipo de referencia en Violencia basada en
+								Género y
+								Generaciones.</b>
+							<br> Horario de atención: <br>
+							<b> Cardona:</b> Lunes: Hora 13:00 a 15:00; Jueves: Hora 13:00 a 14:00hs. Telefono
+							45369045/7472 <br>
+							<b> Dolores:</b> Miércoles: Hora 14:00 a 16:00hs. Telefono 45342111<br>
+							<b> Mercedes:</b> Jueves: Hora 11:00 a 13:00hs. Contacto Telefonico 45320751/453 de lunes a
+							viernes
+							de 08:00 a 14:00hs
+						</p>
+						<div class="message_img">
+							<img src="/img/violence/mercedes.jpg" alt="">
+							<img src="/img/violence/dolores.jpg" alt="">
+							<img src="/img/violence/cardona.jpg" alt="">
+						</div>
+					</div>
+					<div id="message3">
+						<p> No aplica como Violencia basada en Género y Generaciones
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!------------------------>
+	<!---- FOOTER SECTION ---->
+	<!------------------------>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<h4> Ubicación </h4>
+					<div class="column-text">
+						<p><b>Policlinico Central</b></p>
+						<p><b>Dirección: </b>18 de Julio 383</p>
+						<p><b>Tel: </b> 4532 7051</p>
+					</div>
+
+					<div class="column-text">
+						<p><b>Sanatorio</b></p>
+						<p><b>Dirección: </b>Florencio Sánchez 623 e/Haedo</p>
+						<p><b>Tel: </b> 4532 2313 - 45323037</p>
+					</div>
+
+					<div class="column-text">
+						<p><b>Oficina Administrativa</b></p>
+						<p><b>Dirección: </b>18 de Julio 378</p>
+						<p><b>Tel: </b> 4532 2813 - 4532 3444</p>
+					</div>
+				</div>
+
+				<div class="column">
+					<h4> Filiales </h4>
+					<div class="column-text">
+						<p><b>Dolores</b></p>
+						<p><b>Dirección: </b>Puig 1480</p>
+						<p><b>Tel: </b> 4534 2204</p>
+					</div>
+
+					<div class="column-text">
+						<p><b>Cardona</b></p>
+						<p><b>Dirección: </b> Boulevar Cardona 1273</p>
+						<p><b>Tel: </b> 4536 9045</p>
+					</div>
+				</div>
+
+				<div class="column">
+					<h4> Afiliaciones </h4>
+					<div class="column-text">
+						<p><b>Afiliaciones</b></p>
+						<p><b>Dirección: </b>18 de Julio 378</p>
+						<p><b>Tel: </b> 4532 2813 - 4532 3444</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row firm">
+				<div class="column">
+					<p>&copy; Cómputos Mercedes - CAMS IAMPP</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--------------------------------------------------------------------------------------->
+	<!------------------------------------ SCRIPT JS ---------------------------------------->
+	<!--------------------------------------------------------------------------------------->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/violence.js"></script>
+
+	<!-- Icons -->
+	<script src="https://kit.fontawesome.com/62f868e9da.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

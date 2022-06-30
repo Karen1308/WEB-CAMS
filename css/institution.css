@@ -1,0 +1,231 @@
+/*----------------------------------------------------------------------------------
+------------------------------ EQUIPO ----------------------------------------------
+------------------------------------------------------------------------------------*/
+.team .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team .column {
+    width: 250px;
+    margin: 5px;
+}
+
+.single-team {
+    padding-bottom: 1vw;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.team-img {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.team-img img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.single-team:hover .team-img img {
+    transform: scale(1.1);
+}
+
+.team-content {
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+    transition: all 0.4s;
+    background: #47b386;
+    z-index: 2;
+    margin: 0px auto;
+    transition: all 300ms ease;
+}
+
+.team-content .team-text {
+    display: none;
+}
+
+.single-team:hover {
+    box-shadow: 5px 5px 15px #000;
+}
+
+/* Oculto cargo y muestro nombre  */
+.single-team:hover>.team-content>.team-info {
+    display: none;
+}
+
+.single-team:hover>.team-content>.team-text {
+    display: inline-block;
+}
+
+.team-info {
+    height: 100%;
+    transition: all 300ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.team-info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
+.single-team:hover .team-info h3 {
+    color: #fff;
+}
+
+.team-text p {
+    color: #fff;
+    margin: 10px;
+    font-size: 0.9rem;
+}
+
+/*----------------------------------------------------------------------------------
+------------------------------ SECTION MAPS ----------------------------------------
+------------------------------------------------------------------------------------*/
+#map {
+    height: 610px;
+}
+
+.map {
+    position: relative;
+    overflow: hidden;
+}
+
+.api-map {
+    display: none;
+}
+
+.loc p,
+.loc h4 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    width: 240px;
+    height: 60px;
+    background: #8bccb1;
+    color: #262626;
+    transition: box-shadow .5s;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.box button {
+    border: transparent;
+    background: transparent;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+}
+
+.box:hover {
+    box-shadow: 0 0 12px #777777;
+}
+
+/*----------------------------------------------------------------------------------
+----------------------- FORMULARIO DE CONSULTA -------------------------------------
+------------------------------------------------------------------------------------*/
+.container-btn-form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container-btn-form .form {
+    width: 100%;
+    background: #262626;
+}
+
+.form .box {
+    background: #262626;
+}
+
+.form button {
+    background: transparent;
+    color: #fff;
+}
+
+.modal-section {
+    background: transparent;
+}
+
+.modal_container {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    width: 700px;
+    height: 700px;
+    background: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 0.8s;
+    transform: translateY(0%);
+    border-radius: 10px;
+}
+
+.close {
+    font-family: Arial;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #c44a4a;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.modal-close {
+    transform: translateY(-200%);
+}
+
+.modal .form {
+    width: 95%;
+    height: 90%;
+    margin-right: 0;
+    margin-top: 30px;
+}
+
+.form iframe {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Last-Modified" content="0">
+	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" CONTENT="no-cache">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="CAMS IAMPP - Tasas" content="">
+	<link rel="shortcut icon" href="img/logos/cams.png">
+	<link rel="shortcut icon" href="img/logos/cams.png">
+	<title> CAMS IAMPP - Valores de tasas</title>
+
+	<!--------------------------------------------------------------------------------------->
+	<!------------------------------------ CSS Libraries ------------------------------------>
+	<!--------------------------------------------------------------------------------------->
+	<!-- Estilos para la página -->
+	<link rel="stylesheet" href="css/generic.css">
+
+	<!-- Animaciones para elementos  -->
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!-- Media queries - Responsive  -->
+	<link rel="stylesheet" href="css/mediaqueries.css">
+
+	<!-- Estilos para el swiper -->
+	<link rel="stylesheet" href="css/swiper.css">
+
+</head>
+
+<body>
+	<!------------------------>
+	<!---- HEADER SECTION ---->
+	<!------------------------>
+	<header>
+		<div class="top-header">
+			<div class="logo">
+				<img src="img/logos/cams_fepremi.png" alt="">
+			</div>
+		</div>
+
+		<div class="container-all-menu">
+			<div class="container-menu">
+				<div class="menu">
+					<input type="checkbox" name="" id="check-menu">
+					<label id="label-check" for="check-menu">
+						<i class="fas fa-bars icon-menu"></i>
+					</label>
+					<nav>
+						<ul>
+							<li><a href="index.html"></a></li>
+							<li><a href="institution.html">Institución</a></li>
+							<li><a id="selected">Información</a>
+								<ul>
+									<li><a href="information.html">General</a></li>
+									<li><a href="doctors.html"> Médicos</a>
+										<ul>
+											<li><a href="doctors.html">Médicos referentes</a></li>
+											<li><a href="doctors.html"> Horarios</a></li>
+										</ul>
+									</li>
+									<li><a href="services.html">Servicios</a></li>
+									<li><a href="violence.html"> Violencia </a></li>
+									<li><a href="tasas.html"> Tasas </a></li>
+								</ul>
+							</li>
+							<li><a href="news.html">Novedades</a></li>
+							<li><a>Reserva web</a>
+								<ul>
+									<li><a href="https://reservaweb.camsor.com.uy">Reserva web</a></li>
+									<li><a href="web.html">Manual</a></li>
+								</ul>
+							</li>
+							<li><a
+									href="https://mi.iduruguay.gub.uy/login?process_state=ToEFXqMfU3Whxevo8aubOfQmBeN6HE97W4G-MQZIPyA">Historia
+									Clinica Digital</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<!-- Buscador -->
+				<div class="container-search">
+					<div class="search">
+						<div id="ctn-bars-search">
+							<input type="text" id="input-search" placeholder="¿Qué deseas buscar?">
+							<ul id="box-search">
+								<!-- Creadas con JavaScript - Declarar en el archivo search.js la nueva section -->
+							</ul>
+						</div>
+					</div>
+
+					<!-- Icono del Buscador  -->
+					<div class="options">
+						<div id="check-all">
+							<label for=""> <input type="checkbox" id="check-search" checked> Todas </label>
+						</div>
+						<div class="ctn-icon-search">
+							<i class="fas fa-search" id="icon-search"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Fondo "bloqueado" para el buscador -->
+	<div id="cover-ctn-search"></div>
+
+	<main>
+		<section id="tasas">
+			<div class="title_h2">
+				<h2> Valores de Tasas </h2>
+			</div>
+			<div class="column-text">
+				<h4 class="title_h4">Comunicado</h4>
+				<p>Se exonera a partir del 01/01/2008 del pago de tasas moderadora, a los siguientes medicamentos:
+					Haloperidol Decanoato y Pipotiazina, abonándose únicamente el timbre de la Caja de Jubilaciones
+					y Pensiones de Profesionales Universitarios.</p>
+			</div>
+
+			<div class="column-text">
+				<h4 class="title_h4">Medicamentos</h4>
+				<table>
+					<thead>
+						<tr>
+							<th> Medicamento </th>
+							<th> Precio </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> Despacho de medicamentos </td>
+							<td> $ 125.22 </td>
+						</tr>
+						<tr>
+							<td> Timbre de medicamentos </td>
+							<td> $ 27 </td>
+						</tr>
+						<tr>
+							<td> IVA </td>
+							<td> $ 12.58 </td>
+						</tr>
+						<tr>
+							<td> Sub Total </td>
+							<td> $ 164.74 </td>
+						</tr>
+						<tr>
+							<td> Redondeo </td>
+							<td> $ 0.26 </td>
+						</tr>
+						<tr>
+							<td> Total </td>
+							<td> $ 165.00 </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="column-text">
+				<h4 class="title_h4">Consultas Médicas</h4>
+				<table>
+					<thead>
+						<tr>
+							<th> Consulta </th>
+							<th> Precio </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> CONSULTORIO – Medicina General </td>
+							<td> $ 77 </td>
+						</tr>
+						<tr>
+							<td> CONSULTORIO – Gineco-obst. (cont.embarazo) </td>
+							<td> $ 81 </td>
+						</tr>
+						<tr>
+							<td> CONSULTORIO – Ginecología </td>
+							<td> $ 81 </td>
+						</tr>
+						<tr>
+							<td> CONSULTORIO – Otras especialidades </td>
+							<td> $ 125 </td>
+						</tr>
+						<tr>
+							<td> CONSULTA Nutricionista </td>
+							<td> $ 64 </td>
+						</tr>
+						<tr>
+							<td> No urgencia domicilio </td>
+							<td> $ 250 </td>
+						</tr>
+						<tr>
+							<td> Urgencia a domicilio </td>
+							<td> $ 384 </td>
+						</tr>
+						<tr>
+							<td> Urgencia centralizada </td>
+							<td> $ 231 </td>
+						</tr>
+						<tr>
+							<td> Consulta odontológica </td>
+							<td> $ 362 </td>
+						</tr>
+						<tr>
+							<td> Consulta odontológica(FAM.FUNC.) </td>
+							<td> $ 181 </td>
+						</tr>
+						<tr>
+							<td> Interconsultas interior </td>
+							<td> $ 68 </td>
+						</tr>
+						<tr>
+							<td> Interconsultas Montevideo </td>
+							<td> $ 217 </td>
+						</tr>
+						<tr>
+							<td> Urg.centralizada (P.JUDIC. – C.NOTA RIAL) </td>
+							<td> $ 89 </td>
+						</tr>
+						<tr>
+							<td> Consulta con Sicólogo </td>
+							<td> $ 495 </td>
+						</tr>
+						<tr>
+							<td> Consulta con Sicólogo BROU </td>
+							<td> $ 732 </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="column-text">
+				<h4 class="title_h4">Estudios,tratamientos y otros</h4>
+				<table>
+					<thead>
+						<tr>
+							<th> Estudio/Tratamiento </th>
+							<th> Precio </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>TOMOGRAFIA </td>
+							<td> $ 777 </td>
+						</tr>
+						<tr>
+							<td>MAMOGRAFIA -Preventivo </td>
+							<td> $ 95 </td>
+						</tr>
+						<tr>
+							<td>MAMOGRAFIA -Terapéutico </td>
+							<td> $ 501 </td>
+						</tr>
+						<tr>
+							<td>GAMAGRAMAS </td>
+							<td> $ 501 </td>
+						</tr>
+						<tr>
+							<td>ECO-DOPPLER </td>
+							<td> $ 501 </td>
+						</tr>
+						<tr>
+							<td>ECOFLOW </td>
+							<td> $ 501 </td>
+						</tr>
+						<tr>
+							<td>PUNCION CITOLOG. (Mielogramas, etc.) </td>
+							<td> $ 281 </td>
+						</tr>
+						<tr>
+							<td>IMPEDANCIOMETRIA </td>
+							<td> $ 281 </td>
+						</tr>
+						<tr>
+							<td>ESTUDIO ELECTRICO </td>
+							<td> $ 281 </td>
+						</tr>
+						<tr>
+							<td>E.E.G </td>
+							<td> $ 235 </td>
+						</tr>
+						<tr>
+							<td>ERGOMETRIA </td>
+							<td> $ 235 </td>
+						</tr>
+						<tr>
+							<td>ECOGRAFIA </td>
+							<td> $ 235 </td>
+						</tr>
+						<tr>
+							<td>RADIOLOGIA </td>
+							<td> $ 187 </td>
+						</tr>
+						<tr>
+							<td>ANALISIS CLINICOS </td>
+							<td> $ 187 </td>
+						</tr>
+						<tr>
+							<td>HOLTER </td>
+							<td> $ 281 </td>
+						</tr>
+						<tr>
+							<td>ECOCARDIOGRAMA </td>
+							<td> $ 281 </td>
+						</tr>
+						<tr>
+							<td>ENDOSCOPIA </td>
+							<td> $ 327 </td>
+						</tr>
+						<tr>
+							<td>CONT. MARCAPASOS </td>
+							<td> $ 825 </td>
+						</tr>
+						<tr>
+							<td>RESONANCIA MAGNETICA </td>
+							<td> $ 777 </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</main>
+
+	<!------------------------>
+	<!---- FOOTER SECTION ---->
+	<!------------------------>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<h4> Ubicación </h4>
+					<div class="column-text">
+						<p><b>Policlinico Central</b></p>
+						<p><b>Dirección: </b>18 de Julio 383 <a href="https://goo.gl/maps/EGpRWqLnEWP2MVWH9"><i
+									class="fas fa-map-marked-alt"></i></a></p>
+						<p><b>Tel: </b> 4532 7051</p>
+					</div>
+					<div class="column-text">
+						<p><b>Sanatorio</b></p>
+						<p><b>Dirección: </b>Florencio Sánchez 623 e/Haedo <a
+								href="https://goo.gl/maps/JjqvCbz4i82uRUTD6"><i class="fas fa-map-marked-alt"></i></a>
+						</p>
+						<p><b>Tel: </b> 4532 2313 - 45323037</p>
+					</div>
+					<div class="column-text">
+						<p><b>Oficina Administrativa</b></p>
+						<p><b>Dirección: </b>18 de Julio 378 <a href="https://goo.gl/maps/vfjyLSnB9YGQ8X9K9"><i
+									class="fas fa-map-marked-alt"></i></a></p>
+						<p><b>Tel: </b> 4532 2813 - 4532 3444</p>
+					</div>
+				</div>
+				<div class="column">
+					<h4> Filiales </h4>
+					<div class="column-text">
+						<p><b>Dolores</b></p>
+						<p><b>Dirección: </b>Puig 1480 <a href="https://goo.gl/maps/8meQPQnukxZv4JMv9"><i
+									class="fas fa-map-marked-alt"></i></a></p>
+						<p><b>Tel: </b> 4534 2204</p>
+					</div>
+					<div class="column-text">
+						<p><b>Cardona</b></p>
+						<p><b>Dirección: </b> Boulevar Cardona 1273 <a href="https://goo.gl/maps/BsdsnpF41xAMnUeh7"><i
+									class="fas fa-map-marked-alt"></i></a></p>
+						<p><b>Tel: </b> 4536 9045</p>
+					</div>
+				</div>
+				<div class="column">
+					<h4> Afiliaciones </h4>
+					<div class="column-text">
+						<p><b>Afiliaciones</b></p>
+						<p><b>Dirección: </b>18 de Julio 378 <a href="https://goo.gl/maps/vfjyLSnB9YGQ8X9K9"><i
+									class="fas fa-map-marked-alt"></i></a></p>
+						<p><b>Tel: </b> 4532 2813 - 4532 3444</p>
+					</div>
+				</div>
+			</div>
+			<div class="row firm">
+				<div class="column">
+					<p>&copy; Cómputos Mercedes - CAMS IAMPP</p>
+				</div>
+				<div class="column">
+					<a href="https://www.facebook.com/cams.soriano.uy/"><i class="fa fa-facebook"></i></a>
+					<a href="https://instagram.com/cams.soriano.uy?utm_medium=copy_link"><i
+							class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--------------------------------------------------------------------------------------->
+	<!------------------------------------ SCRIPT JS ---------------------------------------->
+	<!--------------------------------------------------------------------------------------->
+	<!-- Icons -->
+	<script src="https://kit.fontawesome.com/62f868e9da.js" crossorigin="anonymous"></script>
+
+	<!-- Buscador -->
+	<script src="js/search.js"></script>
+
+</body>
+
+</html>

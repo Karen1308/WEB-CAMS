@@ -1,0 +1,214 @@
+/********************************/
+/***** Breakpoint en 300px *****/
+/******************************/
+@media (min-width: 300px) and (max-width: 720px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        padding: 0px;
+    }
+
+    section {
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+        background: #f5f5f5;
+    }
+
+    .title_h2 h2 {
+        font-size: 2em;
+        margin: 5px;
+    }
+
+    .swiper-wrapper {
+        height: 300px !important;
+    }
+}
+
+/********************************/
+/***** Breakpoint en 320px *****/
+/******************************/
+@media (max-width: 320px) {
+
+    /* PAGINA DE INICIO */
+    /* Swipper */
+    .details-item {
+        height: 50%;
+    }
+
+    .swiper-container {
+        height: 300px !important;
+    }
+
+    .swiper-wrapper {
+        height: 100%;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .name-specialties h3 {
+        font-size: 15px;
+        text-indent: 0px;
+    }
+
+    .name-doctor h3 {
+        font-size: 12px;
+        text-indent: 0px;
+    }
+
+}
+
+/********************************/
+/***** Breakpoint en 480px *****/
+/******************************/
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    .slide .column {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Pie de página en Index */
+    .footer {
+        padding-top: 10px;
+    }
+
+    .footer .container .row:first-child {
+        display: inline !important;
+    }
+
+    .footer a i.fa {
+        padding: 0px;
+        margin: 0px 5px;
+        font-size: 30px;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .firm {
+        padding: 5px 0px;
+        display: flex !important;
+        justify-content: space-between;
+    }
+
+    .firm .column {
+        margin: 5px;
+    }
+
+}
+
+/********************************/
+/***** Breakpoint en 720px *****/
+/******************************/
+@media (max-width: 720px) {
+
+    /* Menu en encabezado */
+    .top-header {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        background-color: #47b386;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav>ul>li>a:hover {
+        transform: scale(1);
+    }
+
+    nav ul li ul {
+        left: 90px;
+    }
+
+    nav>ul>li:hover ul {
+        left: 50px;
+    }
+
+    nav>ul>li:first-child a {
+        background-position: 10px;
+    }
+
+    #selected {
+        transform: scale(1);
+    }
+
+    #label-check {
+        display: block;
+    }
+
+    .icon-menu {
+        display: flex;
+    }
+
+    #check-menu:checked~nav>ul {
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* main {
+        margin-top: 158px;
+    } */
+
+    /* Imagen de pagina news se ocultan */
+    .col-img {
+        display: none;
+    }
+
+    /* Ajustando columna de texto al ancho de pantalla*/
+    .col-text {
+        width: 100%;
+    }
+}
+
+/********************************/
+/***** Breakpoint en 900px *****/
+/******************************/
+@media (max-width: 900px) {
+    .title_h2 h2::after,
+    .title_h2 h2::before {
+        display: none;
+    }
+}
+
+/********************************/
+/***** Breakpoint en 1024px *****/
+/******************************/
+@media (max-width: 1024px) {}
+
+/********************************/
+/***** Breakpoint en 1200px *****/
+/******************************/
+@media (max-width: 1200px) {
+    /* Cuadro de imagen - News  */
+    .col-img {
+        height: 60%;
+    }
+
+    .col-img img {
+        height: auto;
+    }
+}

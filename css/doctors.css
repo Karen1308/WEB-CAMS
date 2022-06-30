@@ -1,0 +1,318 @@
+/********************************************************************/
+/********************* SWIPER MÉDICOS ******************************/
+/******************************************************************/
+td {
+  padding: 0px;
+  border-bottom: 0px;
+}
+
+.details-item {
+  width: 100%;
+  height: 100%;
+}
+
+.img-doctor {
+  width: 100%;
+  height: 80%;
+}
+
+.img-doctor img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #262626;
+}
+
+.name-doctor {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+.name-doctor h3 {
+  font-size: 20px;
+  background-color: #262626;
+  color: white;
+  text-indent: 0px;
+  padding: 15px;
+}
+
+.name-specialties {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  margin-bottom: -20px;
+}
+
+.name-specialties h3 {
+  font-size: 20px;
+  background-color: #262626;
+  color: white;
+  padding: 10px 15%;
+  text-indent: 0px;
+  text-align: center;
+}
+
+.content {
+  margin: 20px;
+}
+
+.table-schedule table {
+  width: 100%;
+}
+
+.table-schedule table thead {
+  background: #53a583;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.table-schedule thead th:hover {
+  background: #72c7a4;
+  cursor: pointer;
+}
+
+.table-schedule table tbody {
+  text-align: left;
+  text-indent: 5px;
+  height: auto;
+}
+
+.table-schedule table p {
+  margin: 5px;
+}
+
+.table-schedule tbody td {
+  text-align: center;
+}
+
+.table-schedule tbody tr td:first-child {
+  text-align: left;
+}
+
+.table-schedule tbody tr:hover {
+  background: rgb(214, 214, 214);
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+/********************************************************************/
+/********************* HORARIOS MÉDICOS ****************************/
+/******************************************************************/
+.table-container-search {
+  justify-content: flex-start;
+}
+
+#table-ctn-bars-search {
+  display: inline-block;
+  animation: none;
+}
+
+#table-ctn-bars-search input {
+  border: 1px solid #979797;
+  margin: 10px 0px;
+  border-radius: 2px;
+  width: 500px;
+}
+
+#table-icon-search {
+  color: #000000;
+}
+
+#table-icon-search:hover {
+  color: #53a583;
+}
+
+/**************************************************/
+/**** PAGINACIÓN DE LA TABLA DE LOS HORARIOS *****/
+/************************************************/
+.pagination ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  padding: 10px;
+}
+
+.pagination ul li {
+  color: #044429;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.pagination ul li.numb {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  margin: 0 3px;
+}
+
+.pagination ul li.numb.first {
+  margin: 0px 3px 0 -5px;
+}
+
+.pagination ul li.numb.last {
+  margin: 0px -5px 0 3px;
+}
+
+.pagination ul li.dots {
+  font-size: 22px;
+  cursor: default;
+}
+
+.pagination ul li.btn {
+  padding: 0 20px;
+  border-radius: 50px;
+}
+
+.pagination ul li.prev,
+.pagination ul li.next {
+  border-radius: 25px;
+}
+
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover {
+  background: #53a583;
+  color: #ffff;
+}
+
+.pager-nav {
+  margin: 16px 0;
+}
+
+.pager-nav span {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 1px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.pager-nav span:hover,
+.pager-nav .pg-selected {
+  background-color: #53a583;
+  border: 1px solid #cccccc;
+}
+
+.prev {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.table-commands {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BUSCADOR DE CONTENIDO */
+.table-container-search {
+  display: flex;
+  align-items: center;
+}
+
+.table-ctn-icon-search {
+  max-width: 50px;
+  padding: 0px 10px;
+}
+
+.table-ctn-icon-search button {
+  background: transparent;
+  border: none;
+}
+
+.table-ctn-icon-search i {
+  font-size: 25px;
+  color: #53a583;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.table-ctn-icon-search i:hover {
+  color: #262626;
+}
+
+#table-ctn-bars-search input {
+  padding: 10px;
+  border: 1px solid #979797;
+  width: 500px;
+  font-size: 16px;
+  outline: 0;
+  text-indent: 15px;
+}
+
+#table-box-search {
+  position: fixed;
+  min-width: 300px;
+  width: auto;
+  background: #ffff;
+  z-index: 9;
+  display: none;
+}
+
+#table-box-search li {
+  width: 300px;
+  cursor: pointer;
+}
+
+#table-box-search li:hover {
+  background: #bbbbbb;
+}
+
+#table-box-search li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: #262626;
+}
+
+#table-box-search i {
+  margin-right: 10px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+#table-check-all {
+  display: none;
+  color: white;
+  animation: bounceIn;
+  animation-duration: 1s;
+}
+
+#table-check-menu {
+  display: none;
+}
+
+#table-label-check {
+  width: 26px;
+  height: 100%;
+  display: none;
+}
+
+.table-icon-menu {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  width: 26px;
+  height: 100%;
+  display: flex !important;
+  align-items: center;
+}

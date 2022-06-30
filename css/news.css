@@ -1,0 +1,60 @@
+/***********************************************************************/
+/******************************* NOVEDADES ****************************/
+/*********************************************************************/
+.news {
+    min-height: 350px;
+    padding: 10px;
+    display: flex;
+}
+
+.col-img {
+    width: 30%;
+    height: auto;
+    box-shadow: 0 0 12px #777777;
+    margin: 10px;
+}
+
+.col-img img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.col-text,
+.title-news {
+    padding: 10px;
+}
+
+.col-text {
+    width: 70%;
+}
+
+.title-news h2 {
+    padding-bottom: 10px;
+}
+
+.title-news h3 {
+    background-color: #8bccb1;
+    color: #fff;
+}
+
+.title-news h4 {
+    font-weight: bold;
+}
+
+.content-news {
+    align-items: left;
+}
+
+.content-news p {
+    font-size: 1em;
+}
+
+.content-news ul {
+    margin-left: 30px;
+}
+
+.content-news li {
+    list-style-type: disc;
+}
